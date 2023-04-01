@@ -14,7 +14,7 @@ button {
 }
 
 body {
-    background-color: #242948;
+    background: linear-gradient(to right, #464421, #334b18, rgb(79, 91, 167), rgb(28, 17, 39));
     color: #fff;
 }
 
@@ -27,7 +27,11 @@ main {
 
 .app {
     width: 100%;
-    max-width: 768px;
+    max-width: 800px;
+    min-width: 400px;
+    padding: 1rem;
+    background-color: #0d0d0d;
+    border-radius: 1rem;
 }
 
 .app header {
@@ -39,16 +43,31 @@ main {
 
 .app header h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 3rem;
     font-weight: 400;
 }
 
 .app header button {
     color: #fff;
     font-size: 18px;
-    border-bottom: 2px solid #fff;
     text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #8a3a91, #4b1846);
+    opacity: 0.8;
+    transition: 0.5s;
+    box-shadow:  0 0 5px rgb(171, 167, 167);
 }
+.app header button:hover {
+    opacity: 1;
+}
+.app header button:active {
+    opacity: 0.6;
+    padding: 0.8rem;
+    box-shadow: none;
+}
+
 
 .item {
     display: flex;
@@ -56,7 +75,7 @@ main {
     justify-content: space-between;
     padding: 1.5rem;
     border-radius: 1rem;
-    background-color: #1e223d;
+    background-color: #323235;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 1.5rem;
 }
